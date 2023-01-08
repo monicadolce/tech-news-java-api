@@ -60,6 +60,11 @@ public class Comment implements Serializable {
         this.postId = postId;
     }
 
+    public Comment() {
+
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

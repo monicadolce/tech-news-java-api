@@ -29,6 +29,10 @@ public class User implements Serializable {
     @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
 
+    public User() {
+
+    }
+
     public User(Integer id, String username, String email, String password, boolean loggedIn, List<Post> posts, List<Vote> votes, List<Comment> comments) {
         this.id = id;
         this.username = username;
